@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.5.0",
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "set PORT=3983&&node .output/server/index.mjs",
+    "preview": "nuxi build&&node .output/server/index.mjs",
+    "lint": "eslint .",
+    "postinstall": "nuxi prepare"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "@iconify-json/carbon": "^1.1.7",
+    "@iconify-json/twemoji": "^1.1.5",
+    "@nuxtjs/color-mode": "^3.1.4",
+    "@pinia/nuxt": "^0.3.1",
+    "@unocss/nuxt": "^0.45.4",
+    "@vueuse/nuxt": "^9.1.0",
+    "eslint": "^8.21.0",
+    "nuxt": "^3.0.0-rc.6",
+    "nuxt-jsonld": "^2.0.3",
+    "nuxt-schema-org": "0.7.0-beta.3",
+    "pinia": "^2.0.17",
+    "typescript": "^4.7.4"
+  },
+  "resolutions": {
+    "resolve": "1.20.0"
+  },
+  "dependencies": {
+    "sitemap": "^7.1.1"
+  }
+}
